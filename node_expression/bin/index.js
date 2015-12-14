@@ -1,7 +1,8 @@
+// 通过 配置文件 生成plits 和 重命名 表情名称 
+
+// https://github.com/shelljs/shelljs
 require('shelljs/global');
 var fs = require('fs');
-var handlebars = require('')
-
 
 var confFile = __dirname + '/../conf/Expression.conf'; // 配置文件路径
 var plistFile = __dirname + '/../plist/Expression.plist'; // 生成的plist路径
