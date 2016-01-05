@@ -15,6 +15,18 @@ var fileArray = ls('-R', imageFile);
 var array = new Array();
 for (var key in fileArray) {
 	var value = fileArray[key];
+	console.log(key);
+	console.log(value);
+
+	// 重命名文件
+	/*
+	if (value.indexOf(".") > 0) {
+		var newValue = value.substring(0, value.length - 4);
+		var newPath = imageFile + newValue + "@2x.png";
+		var oldPath = imageFile + value;
+		fs.rename(oldPath, newPath);
+	}
+	*/
 	if (value.indexOf("@2x") > 0) {
 		console.log(value);
 		var newValue = value.substring(0, value.length - 7);

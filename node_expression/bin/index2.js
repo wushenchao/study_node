@@ -1,4 +1,4 @@
-// 通过 配置文件和模版 生成plits 和 重命名 表情名称 
+// 通过 配置文件和模版  生成plits 和 重命名 表情名称 
 require('shelljs/global');
 var hbs = require('hbs');
 var fs = require('fs');
